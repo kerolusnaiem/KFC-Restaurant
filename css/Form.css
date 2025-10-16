@@ -1,0 +1,110 @@
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'poppins', sans-serif;
+    background : #fff5f5;
+    height : 80vh;
+}
+
+h2 {
+    color : crimson;
+    font-weight : bold;
+    text-align : center;
+    margin-top : 80px;
+}
+
+.container {
+    width : 80%;
+    height : 80%;
+    margin : 2rem auto;
+}
+
+.container .apply {
+  width : 50%;
+  height : 100%;
+  margin : auto;
+}
+
+.container .apply form {
+    width : 100%;
+    height : 100%;
+}
+
+.container .apply form label {
+    margin-bottom : 5px;
+    font-size : 18px;
+    font-weight : bold;
+    color : #000;
+}
+
+.container .apply form input {
+    width : 100%;
+    padding : 8px;
+    margin-bottom  : 20px;
+    outline : none;
+    font-size : 18px;
+    border-radius : 8px;
+    border  :none;
+    /* border : 1px solid crimson; */
+    box-shadow : 1px 1px 5px 2px rgb(0,0,0,0.2);
+}
+
+.container .apply form input:focus {
+  border : 2px solid crimson;
+  box-shadow : 1px 1px 5px 2px crimson;
+}
+
+
+.container .apply form select {
+    width : 100%;
+    padding : 10px;
+    margin-bottom : 20px;
+    border-radius : 8px;
+    border : none;
+    outline : none;
+    /* border : 1px solid crimson;  */
+    cursor : pointer;
+    box-shadow : 1px 1px 5px 2px rgb(0,0,0,0.2);
+}
+
+.container .apply form select:focus { 
+  border : 2px solid crimson;
+  box-shadow : 1px 1px 5px 2px crimson;
+}
+
+.container .apply form .file {
+    padding : 0 5px;
+    border : none;
+    box-shadow : none;
+}
+
+.container .apply form .bn {
+    background : crimson;
+    color : #fff;
+    padding : 10px 0;
+    border-radius : 20px;
+    font-weight : bold;
+}
+.container .apply form .bn:hover {
+    background : #af0d2d;
+}
+
+
+@media (max-width : 992px) {
+ .container .apply {
+    width : 100%;
+ }   
+}
+
+@media (min-width : 992px) and (max-width : 1400px){ 
+    .container .apply {
+        width : 80%;
+    }
+}

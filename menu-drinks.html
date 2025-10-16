@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/drinks.css">
+</head>
+<body>
+     <h2>Chicken Meals</h2>
+    <div class="offers-items">
+        <div class="item">
+          <div class="item-image">
+             <img src="images/menu/drinks/drink1.jpg" alt="drink1">
+          </div>
+          <div class="item-text">
+             <h3>Pepsi</h3>
+             <hr>
+             <p>Pepsi CAN</p>
+             <div class="content">
+             <div class="price">
+             <span class="sp">EGP 20.00</span>
+             <a href="#">order now</a>
+         </div> 
+        </div>
+      </div>
+     </div>
+     <div class="item">
+          <div class="item-image">
+          <img src="images/menu/drinks/drink2.jpg" alt="drink2">
+           </div>
+          <div class="item-text">
+          <h3>Diet Pepsi</h3>
+          <hr> 
+          <p>Diet Pepsi CAN</p>
+          <div class="content">
+          <div class="price">
+          <span class="sp">EGP 20.00</span>
+          <a href="#">order now</a>
+          </div> 
+        </div>
+      </div>
+     </div>
+     <div class="item">
+          <div class="item-image">
+          <img src="images/menu/drinks/drink3.jpg" alt="drink3">
+           </div>
+          <div class="item-text">
+          <h3>7 UP</h3>
+          <hr> 
+          <p>7 UP CAN</p>
+          <div class="content">
+          <div class="price">
+          <span class="sp">EGP 20.00</span>
+          <a href="#">order now</a>
+          </div> 
+        </div>
+      </div>
+     </div>
+     <div class="item">
+          <div class="item-image">
+          <img src="images/menu/drinks/drink4.jpg" alt="drink4">
+           </div>
+          <div class="item-text">
+          <h3>Mirinda</h3>
+          <hr> 
+          <p>Mirinda CAN</p>
+          <br>
+          <div class="content">
+          <div class="price">
+          <span class="sp">EGP 25.00</span>
+          <a href="#">order now</a>
+          </div> 
+        </div>
+      </div>
+     </div>
+     <div class="item">
+          <div class="item-image">
+          <img src="images/menu/drinks/drink5.jpg" alt="drink5">
+           </div>
+          <div class="item-text">
+          <h3>Schweppes</h3>
+          <hr> 
+          <p>Schweppes CAN</p>
+          <br>
+          <div class="content">
+          <div class="price">
+          <span class="sp">EGP 25.00</span>
+          <a href="#">order now</a>
+          </div> 
+        </div>
+      </div>
+     </div>
+     <div class="item">
+          <div class="item-image">
+          <img src="images/menu/drinks/drink6.jpg" alt="drink6">
+           </div>
+          <div class="item-text">
+          <h3>Water</h3>
+          <hr> 
+          <p>Small water bottle</p>
+          <br>
+          <div class="content">
+          <div class="price">
+          <span class="sp">EGP 15.00</span>
+          <a href="#">order now</a>
+          </div> 
+        </div>
+      </div>
+     </div>
+   </div>
+
+    <div class="calc">
+        <h3>Price calculate (15% Tax)</h3>
+        <input type="number" id="price" placeholder="Enter Price">
+        <br>
+        <button onclick="calculateTax()">Calc</button>
+        <div class="res" id="result"></div>
+       </div>
+
+   <script>
+      function calculateTax(){
+        let price = document.getElementById("price").value;
+        let total = price * 1.15;
+        document.getElementById("result").innerText = "total with tax: " + total + "EGP";
+      }
+   </script>
+</body>
+</html>
